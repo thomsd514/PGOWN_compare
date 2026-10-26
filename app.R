@@ -1,4 +1,4 @@
-# Copyright [2026] David Thomson
+# Copyright [2026] David Thomson and Claude
 # Licensed under the Apache License, Version 2.0
 
 library(shiny)
@@ -15,6 +15,7 @@ BC_TEAL <- "#00718F"
 BC_TEXT <- "#2D2D2D"
 BC_GRID <- "#D8D8D8"
 
+# Karly Harker function
 get_gwl_data <- function(well, type = "data") {
   if (!grepl("^[0-9]{3}$", well)) {
     stop("Well numbers must contain exactly 3 digits, for example 071.")
